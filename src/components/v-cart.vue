@@ -1,0 +1,23 @@
+<template>
+  <div class="v-cart">
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: 'v-cart',
+  components: {},
+  props: {},
+  data() {
+    return {}
+  },
+  computed: {},
+  methods: {},
+  watch: {},
+  mounted() {
+    console.log('Hello v-cart');
+    
+  }
+}
+</script>
