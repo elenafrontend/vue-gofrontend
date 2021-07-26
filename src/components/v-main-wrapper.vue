@@ -1,40 +1,36 @@
 <template>
   <div class="v-main-wrapper">
-    <p>{{ title }}</p>
     <VCatalog></VCatalog>
     <VCart></VCart>
   </div>
 </template>
 
 <script>
-import VCart from './v-cart'
-import VCatalog from './v-catalog'
+import VCart from "./v-cart";
+import VCatalog from "./v-catalog";
 
 export default {
-  name: 'v-main-wrapper',
+  name: "v-main-wrapper",
   components: {
     VCart,
     VCatalog,
   },
   props: {},
   data() {
-    return {
-      title: 'Main wrapper'
-    }
+    return {};
   },
   computed: {},
   methods: {},
   watch: {},
   mounted() {
-    console.log('Hello v-main-wrapper');
-    
-  }
-}
+    console.log("Hello v-main-wrapper");
+  },
+};
 </script>
 
 <style scoped>
-  .v-main-wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-  }
+.v-main-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
 </style>
