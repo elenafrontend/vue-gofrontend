@@ -1,7 +1,9 @@
 <template>
   <div class="v-catalog">
     <h1>Catalog</h1>
-    <VCatalogItem></VCatalogItem>
+    <div class="v-catalog__list">
+      <VCatalogItem></VCatalogItem>
+    </div>
   </div>
 </template>
 
@@ -26,3 +28,12 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  .v-catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+</style>
